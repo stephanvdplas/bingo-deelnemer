@@ -27,7 +27,10 @@ radio.setGroup(0)
 let max = 75
 aantal = 3
 punten = 0
-basic.showNumber(punten)
+basic.showString("Max:")
+basic.showNumber(max)
+basic.showString(" Aantal:")
+basic.showNumber(aantal)
 lijst = []
 for (let index = 0; index <= max; index++) {
     lijst.push(index)
@@ -36,3 +39,5 @@ for (let index = 0; index < max - aantal; index++) {
     willekeurig = randint(1, lijst.length - 1)
     lijst.removeAt(willekeurig)
 }
+basic.pause(1000)
+basic.showIcon(IconNames.Square)
