@@ -1,13 +1,13 @@
 radio.onReceivedNumber(function (receivedNumber) {
     basic.showNumber(receivedNumber)
-    basic.pause(100)
+    basic.pause(500)
     if (lijst.indexOf(receivedNumber) > 0) {
         punten += 1
         basic.showIcon(IconNames.Yes)
-        basic.pause(200)
+        basic.pause(500)
     } else {
         basic.showIcon(IconNames.No)
-        basic.pause(200)
+        basic.pause(500)
     }
     basic.showNumber(punten)
 })
@@ -25,7 +25,7 @@ let punten = 0
 let aantal = 0
 radio.setGroup(0)
 let max = 75
-aantal = 3
+aantal = 5
 punten = 0
 basic.showString("Max:")
 basic.showNumber(max)
