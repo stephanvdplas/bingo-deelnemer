@@ -24,7 +24,7 @@ let lijst: number[] = []
 let punten = 0
 let aantal = 0
 radio.setGroup(0)
-let max = 75
+let max = 30
 aantal = 5
 punten = 0
 basic.showString("Max:")
